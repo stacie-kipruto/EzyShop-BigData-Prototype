@@ -1,14 +1,10 @@
-\# EzyShop Big Data Prototype
+# EzyShop Big Data Prototype
 
-
-
-\## Overview
+## Overview
 
 This prototype demonstrates a Big Data solution for EzyShop's e-commerce analytics using Apache Spark for batch processing of structured and unstructured data.
 
-
-
-\## Business Problem
+## Business Problem
 
 EzyShop needs to analyze customer behavior by integrating:
 
@@ -16,17 +12,12 @@ EzyShop needs to analyze customer behavior by integrating:
 
 \- \*\*Unstructured data:\*\* Customer reviews
 
-
-
 The goal is to identify top-selling products and extract customer sentiment insights.
 
 
+## Architecture
 
-\## Architecture
-
-
-
-\### Components
+### Components
 
 1\. \*\*Data Sources:\*\* CSV (sales) and JSON (reviews)
 
@@ -37,8 +28,7 @@ The goal is to identify top-selling products and extract customer sentiment insi
 4\. \*\*Analytics:\*\* Product rankings and sentiment analysis
 
 
-
-\### Data Flow
+### Data Flow
 
 ```
 
@@ -51,8 +41,7 @@ reviews.json┘
 ```
 
 
-
-\## Technology Stack
+## Technology Stack
 
 \- \*\*Python 3.11\*\*
 
@@ -63,8 +52,7 @@ reviews.json┘
 \- \*\*Hadoop 3.3.5\*\* (Windows binaries)
 
 
-
-\## System Requirements
+## System Requirements
 
 \- Windows 10/11
 
@@ -77,12 +65,8 @@ reviews.json┘
 \- 1GB free disk space
 
 
-
-\## Installation \& Setup
-
-
-
-\### 1. Clone Repository
+## Installation \& Setup
+### 1. Clone Repository
 
 ```bash
 
@@ -92,9 +76,7 @@ cd EzyShop-BigData-Prototype
 
 ```
 
-
-
-\### 2. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 
@@ -103,8 +85,7 @@ pip install pyspark
 ```
 
 
-
-\### 3. Configure Hadoop (Windows only)
+### 3. Configure Hadoop (Windows only)
 
 1\. Download Hadoop 3.3.5 binaries: https://github.com/cdarlint/winutils
 
@@ -120,13 +101,9 @@ $env:PATH = "$env:PATH;C:\\hadoop\\bin"
 
 ```
 
+## Running the Prototype
 
-
-\## Running the Prototype
-
-
-
-\### Execute Main Pipeline
+### Execute Main Pipeline
 
 ```bash
 
@@ -136,9 +113,7 @@ python prototype.py
 
 ```
 
-
-
-\### View Results
+### View Results
 
 ```bash
 
@@ -146,9 +121,7 @@ python view\_results.py
 
 ```
 
-
-
-\## Output
+## Output
 
 The prototype generates two analytics outputs:
 
@@ -171,12 +144,8 @@ The prototype generates two analytics outputs:
 &nbsp;  - Negative: "bad", "slow"
 
 
-
-\## Sample Results
-
-
-
-\### Top Products
+## Sample Results
+### Top Products
 
 | Product ID | Sales Count |
 
@@ -189,8 +158,7 @@ The prototype generates two analytics outputs:
 | 108        | 2           |
 
 
-
-\### Sentiment Keywords
+### Sentiment Keywords
 
 | Keyword | Count |
 
@@ -205,8 +173,7 @@ The prototype generates two analytics outputs:
 | love    | 3     |
 
 
-
-\## Project Structure
+## Project Structure
 
 ```
 
@@ -237,14 +204,12 @@ EzyShop\_BigData\_Prototype/
 ```
 
 
-
-\## Testing
+## Testing
 
 See \[test\_log.md](test\_log.md) for detailed test results and issue resolutions.
 
 
-
-\## Future Enhancements
+## Future Enhancements
 
 \- Real-time streaming with Kafka
 
@@ -255,14 +220,7 @@ See \[test\_log.md](test\_log.md) for detailed test results and issue resolution
 \- Interactive dashboards (Power BI / Tableau)
 
 
-
-\## Author
+## Author
 
 Stacie Kipruto
-
-
-
-\## License
-
-Educational project for DAT801A Big Data Architecture and Management
 
