@@ -8,9 +8,9 @@ This prototype demonstrates a Big Data solution for EzyShop's e-commerce analyti
 
 EzyShop needs to analyze customer behavior by integrating:
 
-\- \*\*Structured data:\*\* Sales transactions
+**Structured data:** Sales transactions
 
-\- \*\*Unstructured data:\*\* Customer reviews
+**Unstructured data** Customer reviews
 
 The goal is to identify top-selling products and extract customer sentiment insights.
 
@@ -19,13 +19,13 @@ The goal is to identify top-selling products and extract customer sentiment insi
 
 ### Components
 
-1\. \*\*Data Sources:\*\* CSV (sales) and JSON (reviews)
+**Data Sources:** CSV (sales) and JSON (reviews)
 
-2\. \*\*Processing Engine:\*\* Apache Spark 3.5 (local mode)
+**Processing Engine:** Apache Spark 3.5 (local mode)
 
-3\. \*\*Storage:\*\* Parquet format for optimized analytics
+**Storage:** Parquet format for optimized analytics
 
-4\. \*\*Analytics:\*\* Product rankings and sentiment analysis
+**Analytics:** Product rankings and sentiment analysis
 
 
 ### Data Flow
@@ -43,26 +43,26 @@ reviews.json┘
 
 ## Technology Stack
 
-\- \*\*Python 3.11\*\*
+**Python 3.11**
 
-\- \*\*Apache Spark (PySpark) 3.5.3\*\*
+**Apache Spark (PySpark) 3.5.3**
 
-\- \*\*Java 17 (LTS)\*\*
+**Java 17 (LTS)**
 
-\- \*\*Hadoop 3.3.5\*\* (Windows binaries)
+**Hadoop 3.3.5** (Windows binaries)
 
 
 ## System Requirements
 
-\- Windows 10/11
+- Windows 10/11
 
-\- Python 3.11
+- Python 3.11
 
-\- Java 17
+- Java 17
 
-\- 4GB RAM minimum
+- 4GB RAM minimum
 
-\- 1GB free disk space
+- 1GB free disk space
 
 
 ## Installation \& Setup
@@ -127,7 +127,7 @@ The prototype generates two analytics outputs:
 
 
 
-1\. \*\*Top Products\*\* (`output/top\_products/`)
+1. **Top Products** (`output/top\_products/`)
 
 &nbsp;  - Products ranked by sales volume
 
@@ -135,7 +135,7 @@ The prototype generates two analytics outputs:
 
 
 
-2\. \*\*Sentiment Analysis\*\* (`output/sentiment\_counts/`)
+2. **Sentiment Analysis** (`output/sentiment\_counts/`)
 
 &nbsp;  - Keyword frequency from customer reviews
 
@@ -147,61 +147,20 @@ The prototype generates two analytics outputs:
 ## Sample Results
 ### Top Products
 
-| Product ID | Sales Count |
+<img width="284" height="225" alt="image" src="https://github.com/user-attachments/assets/08ac93d9-e9c3-42c1-89bd-4d9788aa978b" />
 
-|------------|-------------|
-
-| 101        | 3           |
-
-| 102        | 3           |
-
-| 108        | 2           |
 
 
 ### Sentiment Keywords
 
-| Keyword | Count |
-
-|---------|-------|
-
-| good    | 8     |
-
-| bad     | 5     |
-
-| slow    | 4     |
-
-| love    | 3     |
+<img width="197" height="152" alt="image" src="https://github.com/user-attachments/assets/a02b885b-88b1-4aad-882a-29b4ee0949c4" />
 
 
 ## Project Structure
 
-```
 
-EzyShop\_BigData\_Prototype/
+<img width="208" height="476" alt="image" src="https://github.com/user-attachments/assets/dd5d6c50-95c6-4f18-9662-c13a92d60b94" />
 
-├── data/
-
-│   ├── sales.csv
-
-│   └── reviews.json
-
-├── scripts/
-
-│   ├── prototype.py
-
-│   └── view\_results.py
-
-├── output/
-
-│   ├── top\_products/
-
-│   └── sentiment\_counts/
-
-├── test\_log.md
-
-└── README.md
-
-```
 
 
 ## Testing
@@ -211,13 +170,13 @@ See \[test\_log.md](test\_log.md) for detailed test results and issue resolution
 
 ## Future Enhancements
 
-\- Real-time streaming with Kafka
+- Real-time streaming with Kafka
 
-\- Machine learning for predictive analytics
+- Machine learning for predictive analytics
 
-\- Cloud deployment (AWS EMR / Azure HDInsight)
+- Cloud deployment (AWS EMR / Azure HDInsight)
 
-\- Interactive dashboards (Power BI / Tableau)
+- Interactive dashboards (Power BI / Tableau)
 
 
 ## Author
