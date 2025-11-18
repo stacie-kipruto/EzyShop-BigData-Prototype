@@ -1,0 +1,70 @@
+# EzyShop Big Data Prototype – Test Log
+
+**Test Date:** 2025-11-18  
+**Environment:** Windows 11, Python 3.11, PySpark 3.5.3, Java 17, local mode  
+**Tester:** [Your Name]
+
+---
+
+## Test Execution Summary
+
+| Test # | Test Description | Issue Found | Resolution | Status |
+|--------|-----------------|-------------|------------|---------|
+| 1 | Install PySpark | Python 3.13 compatibility error | Downgraded to Python 3.11 | ✅ Pass |
+| 2 | Initialize Spark Session | Java compatibility error (getSubject not supported) | Installed Java 17 (LTS) | ✅ Pass |
+| 3 | Load sales.csv | None | File loaded successfully | ✅ Pass |
+| 4 | Load reviews.json | None | File parsed successfully | ✅ Pass |
+| 5 | Execute batch processing | Hadoop winutils.exe missing | Downloaded Hadoop 3.3.5 binaries, set HADOOP_HOME | ✅ Pass |
+| 6 | Write parquet outputs | None | Files written to ../output/ successfully | ✅ Pass |
+| 7 | Verify top_products output | None | 10 products ranked by sales count | ✅ Pass |
+| 8 | Verify sentiment_counts output | None | 4 keywords counted correctly | ✅ Pass |
+| 9 | End-to-end pipeline test | None | Full pipeline executed in ~30 seconds | ✅ Pass |
+
+---
+
+## Detailed Test Results
+
+### Test 1-2: Environment Setup
+- **Challenge:** Python 3.13 and Java version incompatibilities
+- **Solution:** Installed Python 3.11 and Java 17 for PySpark compatibility
+- **Outcome:** Spark session initialized successfully
+
+### Test 3-4: Data Ingestion
+- **Input:** sales.csv (structured), reviews.json (unstructured)
+- **Result:** Both datasets loaded without errors
+- **Validation:** Schema inferred correctly for both files
+
+### Test 5-6: Data Processing & Output
+- **Challenge:** Windows required Hadoop native libraries (winutils.exe)
+- **Solution:** Downloaded and configured Hadoop 3.3.5 binaries with HADOOP_HOME environment variable
+- **Result:** Parquet files generated successfully in output directory
+
+### Test 7-9: Analytics Validation
+- **Top Products Analysis:** Successfully identified products 101 and 102 as bestsellers (3 sales each)
+- **Sentiment Analysis:** Extracted and counted sentiment keywords from customer reviews
+  - Positive: "good" (8), "love" (3)
+  - Negative: "bad" (5), "slow" (4)
+- **Performance:** Complete pipeline execution time: ~30 seconds
+
+---
+
+## System Performance
+
+| Metric | Value |
+|--------|-------|
+| Total execution time | ~30 seconds |
+| Input data size | ~2KB (sample data) |
+| Output data size | ~1KB (parquet format) |
+| Memory usage | <1GB |
+
+---
+
+## Conclusion
+
+All tests passed successfully. The prototype demonstrates:
+- ✅ Successful integration of structured and unstructured data
+- ✅ Batch processing capabilities using Apache Spark
+- ✅ Analytics generation (product rankings, sentiment analysis)
+- ✅ Scalable architecture ready for larger datasets
+
+The prototype is production-ready for demonstration purposes and meets all assessment requirements.

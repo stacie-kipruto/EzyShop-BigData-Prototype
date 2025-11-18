@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+venv311/
+*.egg-info/
+
+# Spark
+metastore_db/
+derby.log
+spark-warehouse/
+
+# Output files (optional - you can keep these for demonstration)
+# output/
+
+# IDE
+.vscode/
+.idea/

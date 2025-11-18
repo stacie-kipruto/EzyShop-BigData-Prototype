@@ -1,0 +1,21 @@
+sale_id,product_id,product_name,quantity,price
+1,101,Wireless Mouse,2,25
+2,102,USB Keyboard,1,30
+3,103,HDMI Cable,3,15
+4,101,Wireless Mouse,1,25
+5,104,Laptop Stand,2,40
+6,102,USB Keyboard,2,30
+7,105,Webcam,1,50
+8,106,Mouse Pad,3,10
+9,107,USB Hub,2,20
+10,108,External Hard Drive,1,80
+11,109,Laptop Sleeve,2,25
+12,110,Monitor Stand,1,35
+13,101,Wireless Mouse,2,25
+14,102,USB Keyboard,1,30
+15,103,HDMI Cable,2,15
+16,104,Laptop Stand,1,40
+17,105,Webcam,1,50
+18,106,Mouse Pad,2,10
+19,107,USB Hub,1,20
+20,108,External Hard Drive,1,80
